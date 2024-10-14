@@ -1,0 +1,13 @@
+.navbar {
+  height: 6rem;
+  background-color: rgb(241, 236, 236);
+}
+
+.fa-umbrella-beach {
+  color: rgb(228, 50, 80);
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
