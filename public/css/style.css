@@ -12,11 +12,30 @@ body {
 }
 
 .add-btn {
-  border-radius: 1.5px;
+
   background-color: rgb(228, 50, 80) !important;
   border: none !important;
 }
 
+.edit-btn {
+
+  background-color: rgb(228, 50, 80) !important;
+  border: none !important;
+}
+
+/*show page*/
+.show-img {
+  height: 35vh;
+}
+
+.show-btn {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 
 .navbar {
