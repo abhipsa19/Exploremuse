@@ -31,11 +31,19 @@ router.get("/login", (req, res) => {
 
 router.post("/login", passport.authenticate("local", { failureRedirect: '/login', failureFlash: true }), async (req, res) => {
   req.flash("success", "Welcome to Exploremuse! You are logged in !");
-  req.session.save(() => {
+
+  res.redirect("/listings");
+}
+);
+
+router.get("/logout", (req, res, next) => {
+  req.logout((err) => {
+    if (err) {
+      return next(err);
+    }
+    req.flash("success", "you are logged out!");
     res.redirect("/listings");
-  })
-
-
+  });
 });
 
 
